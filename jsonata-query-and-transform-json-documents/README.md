@@ -17,6 +17,7 @@ Average height of all items: `$average(Account.Order.Product."Description"."Heig
 A document with some aggregate values:
 ```
 { "total number of items": Account.$sum(Order.Product[]."Quantity") 
+, "total cost": $sum(Account.Order.Product.(Price * Quantity))
 , "average height":$average(Account.Order.Product."Description"."Height")
 , "longest product name": $max(Account.Order.Product."Description".$length("Product Name"))
 }
