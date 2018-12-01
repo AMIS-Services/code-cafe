@@ -1,0 +1,12 @@
+{
+  "name": "node-explore-oow18-with-jsonata",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node explore-oracleopenworld-catalog.js"
+  },
+  "dependencies": {
+    "jsonata": "^1.5.4",
+    "request": "^2.88.0"
+  }
+}
