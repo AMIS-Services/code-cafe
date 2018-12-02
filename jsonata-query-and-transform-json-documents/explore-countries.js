@@ -34,7 +34,20 @@ request(countriesDocumentURL, function (error, response, body) {
                               }
                      
                             `);
-    console.log("Enriched Countries with Y ii name\n" + JSON.stringify(expressionEnrichedCountriesWithY.evaluate(enrichedCountries)))
+    console.log("Enriched Countries with Y in name\n" + JSON.stringify(expressionEnrichedCountriesWithY.evaluate(enrichedCountries)))
 
+    var expressionCompareNedAndBel = jsonata(
+        `(
+            $ned:= $[][name.common='Netherlands'];
+            $bel:= $[][name.common='Belgium'];
+            {"Comparison": "Netherlands and Belgium" 
+            , "Region": $ned.region & ' vs ' & $bel.region
+            , "Capital": $ned.capital & ' vs ' & $bel.capital
+            , "Languages": $ned.languages & ' vs ' & $bel.languages
+            , "Area": $ned.area & ' vs ' & $bel.area
+            })
+            `);
+    console.log("Comparison between Netherlands and Belgium\n" 
+       + JSON.stringify(expressionCompareNedAndBel.evaluate(countries)))
 
 });

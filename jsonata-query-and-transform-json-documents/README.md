@@ -2,6 +2,8 @@
 
 JSONata is a lightweight query and transformation language for JSON data. It reminds me of XPath and XSLT or XQuery. Queries and transformations can be expressed in JSONata using declarative and intuitive syntax (for example: expression Account.Order[0].OrderID to quert the OrderID property of the first Order element in an Account object). The npm module `jsonata` provides a JavaScript implementation that can be used in Node JS and in client side browser code. 
 
+## Try Out JSONata in browser-based Explorer tool
+
 Try out JSONata in the live browser based JSONata explorer:  http://try.jsonata.org/ 
 
 Some expressions on the example Account document:
@@ -53,7 +55,11 @@ Before you can run explore-oracleopenworld-catalog.js, you first need to run `np
 ### Exploring Country Data
 The document https://github.com/mledoze/countries/blob/master/countries.json contains country data in JSON format. We can explore this data using JSONata.
 
-Check out explore-countries.js. 
+Check out the contents of explore-countries.js. You can run this file with `node explore-countries.js`. It will load the JSON document and perform a number of data extractions from that document.
+
+Note for example how enrichment can be done - by composing a source document from multiple data sets and transforming that composite source with a single (or multiple) JSONata expression(s).
+
+Also note the use of variables that can help manage complex queries and transformations in a elegant, understandable way; see the comparison between Netherlands and Belgium.
 
 ## Resources
 Homepage for JSONata: http://jsonata.org/
