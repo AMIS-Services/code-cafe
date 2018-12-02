@@ -69,6 +69,23 @@ Inspect ngrok at port 4040 (for example `http://192.168.188.142:4040`) and learn
 Access the Node application from any client anywhere in the world (for example your mobile device) at the url: `http://<assigned ngrok id>.ngrok.io/?region=Europe`
 
 
+## Localtunnel
+
+localtunnel exposes your localhost to the world for easy testing and sharing! No need to mess with DNS or deploy just to have others test out your changes.
+
+Check out: https://github.com/localtunnel/localtunnel
+
+Localtunnel is available in a Docker Container, very similar to the ngrok solution discussed overhead:
+https://hub.docker.com/r/efrecon/localtunnel/.
+
+Note: localtunnel can use localtunnel.me as its server - or you can run your own server to handle all requests (see: https://github.com/localtunnel/server)
+
+## Vagrant Share
+
+Vagrant Share allows you to share your Vagrant environment with anyone in the world, enabling collaboration directly in your Vagrant environment in almost any network environment with just a single command: `vagrant share`. 
+
+See https://www.vagrantup.com/docs/share/ for details and http://www.gizmola.com/blog/archives/121-Vagrant-Share-and-Ngrok.html for more background.
+
 
 ## Resources
 
