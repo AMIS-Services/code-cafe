@@ -9,8 +9,8 @@ Code Café sessions will usually not work with slides and presentations. Items a
 
 * ngrok (& local tunnel) for exposing locally running services on the internet
 * JSONata - XPath & XSLT/XQuery like expression language for retrieving data from and transforming JSON documents
-* Vagrant (& VirtualBox) - tool for efficient management of VMs and a local Docker Engine); especially useful for running Docker on Windws laptops
-* QuickSQL - utility for rapid generation of SQL DDL and DML scripts for tables, generated test data, constraints, views, triggers and APIs
+* Vagrant (& VirtualBox) - tool for efficient management of VMs and a local Docker Engine); especially useful for running Docker on Windows laptops
+* QuickSQL - free cloud service for rapid generation of SQL DDL and DML scripts for tables, generated test data, constraints, views, triggers and APIs
 * Neo4j - open source Graph Database
 * Google Container Diff - utility to compare two container images and find differences
 * Skaffold - command line tool that facilitates continuous development for Kubernetes applications
@@ -26,3 +26,10 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * Google ContainerTools - collection of open source tools from Google for container and K8S development and management
 * KubeApps - Helm based deployments of dozens of (complex) applications and stacks onto Kubernetes cluster
 * Katacoda - browser based sandboxes and tutorials environment (with the option of defining your own tutorials running on Katacoda servers)
+* Dash -  Documentation Browser and Code Snippet Manager. Dash stores snippets of code and instantly searches offline documentation sets for 200+ APIs, 100+ cheat sheets and more https://kapeli.com/dash (MacOS and iOS)
+* Silver Searcher - source code search utility (https://github.com/ggreer/the_silver_searcher)
+* OneNote (Office 365)
+* Wappalyzer - a Chrome extension that lets you visit any webpage and see what stack was used to build it
+* CloudFlare - CDN, WebApp Firefall, ...
+* ZSH and OhMyZSH - https://ohmyz.sh/  
+* ASCIIDoctor - Asciidoctor (https://asciidoctor.org/) is a text processor and publishing toolchain that converts AsciiDoc files into HTML5, PDF, EPUB, and MOBI.
