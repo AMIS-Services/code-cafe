@@ -16,6 +16,7 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * Skaffold - command line tool that facilitates continuous development for Kubernetes applications
 * Oracle Self Service Integration - cloud service for specifying and running (poll based) integration recipes
 * GraphQL - Apollo - alternative for REST APIs
+* Traefik - Load Balancer and Proxy ("Cloud Native Edge Router") https://traefik.io/
 * WebSpeech API - speech to text support in HTML5 browsers
 * Apache Drill - SQL on non-SQL sources such as JSON, CSV, Hadoop 
 * Apache Camel - light weight Java based integration framework
