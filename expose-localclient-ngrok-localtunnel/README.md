@@ -1,8 +1,8 @@
 # Expose local Docker Container services on the Internet
 
-vagrant share
-ngrok
-localtunnel
+The challenge: you are running a service, API or web application locally on your laptop, in a Docker container. You would like to provide access to external consumers - yourself on your smart phone, a piece of code running in a cloud environment, a colleague on your local network or on the other side of the world.
+
+We will look at how ngrok - a tool and a cloud service - makes this happen. It generates a public URL and ensures that all requests sent to that URL are forwarded to a local agent (running in its own, stand alone Docker container) that can then pass them on to the local service. See https://technology.amis.nl/2016/12/07/publicly-exposing-a-local-service-to-nearby-and-far-away-consumer-on-the-internet-using-ngrok/ for an introduction to ngrok.
 
 
 ## First steps with ngrok and Docker
