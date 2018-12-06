@@ -1,0 +1,12 @@
+{
+  "name": "neo4j-node",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node neo4j-node.js"
+  },
+  "dependencies": {
+    "neo4j-driver": "^1.5.4",
+    "request": "^2.88.0"
+  }
+}
