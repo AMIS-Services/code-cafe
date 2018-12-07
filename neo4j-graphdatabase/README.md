@@ -165,47 +165,76 @@ Try with Scott instead of Adams.
 
 
 ##Accessing Neo4J from Node JS 
+Neo4J has a REST API that can be leveraged from any technology that can speak HTTP. Additionally, there are client libraries for many different technoloystacks, We will now take a look at using Neo4J from Node JS.
 
-Node JS
+To run a clean Node environment, execute the following command: 
+`docker run -it --rm -p 8080:8080 -v "$PWD":/usr/src/app  node:10 bash`
 
-Check file `neo4j-node.js`
+This runs a container with the Node 10 run time environment, with a mapping of the current working directory into the directory /usr/src/app inside the container and with port 8080 in the container exposed at port 8080 on the Docker host. This allows us to run a Node application that can handle HTTP requests at port 8080. 
+
+Note: if you are working in a `vagrant ssh` shell, you may want to copy the directory neo4j-graphdatabase into the directory that contains the Vagrantfile. This makes the directory available inside the Linux environment under /vagrant. If you run the Docker Node container from this /vagrant directory, then you will have the Node application sources available inside the container - in the mounted /usr/src/app directory. Inside the container, copy this mounted, read-only directory to a read-write container owned directory: `cp -r /usr/src/app /app` and work in the /app directory. You now need to run `npm install` in this /app directory in order to install dependencies. 
+
+
+Check the contents of file `neo4j-node.js` to learn how the interaction with Neo4J takes place from JavaScript. Make sure to edit the file with the relevant values for user, password and uri for your environment.
+
+The Node program will retrieve a JSON document with countries from GitHub (https://raw.githubusercontent.com/mledoze/countries/master/countries.json ). It creates nodes for regions, subregions and languages and of course for all countries. It creates relationships from countries to the regions and subregions they are are part of, the languages that are spoken en all other countries they share a border with.
+
+The program will show output about what it is doing - including the literal Cypher statements it is executing.
+
+You can run `neo4j-node.js` using `npm start`.
+
+###Cypher queries against the Countries dataset (run in browser)
+When the Node program has run, the Countries dataset is created in the Neo4J Database. You can execute many queries against this data set. A few examples are shown below, to get some familiarity with the power of Cypher.
 
 Everything related from France:
+```
 match (f:Country{name:'France'})- []->(l)   return f,l
-
+```
 Who speaks French?
+```
 match (f:Language{name:'French'})<- []-(l) return f,l
-
+```
 Who speaks only French?
-match (french:Language{name:'French'}), (c:Country)-[spk:SPEAKS]-> (l) return c, l
-where count(spk) = 1 
-
+```
+MATCH (c:Country)-[spk:SPEAKS]-> (l)
+WITH c, count(spk)  as rel_cnt, l
+WHERE  (l.name ='French' and rel_cnt=1)
+RETURN c;
+``` 
 Who speaks no french - but at least one other language? (more than the French may suspect perhaps)
+```
 MATCH (c:Country)-[spk:SPEAKS]-> (l)
 WITH c,count(spk)  as rel_cnt, l
 WHERE  (l.name <>'French')
 RETURN c, sum(rel_cnt);
-
+```
 or:
+```
 MATCH (french:Language{name:'French'}),(c:Country)-[spk:SPEAKS]-> (l)
 WHERE NOT (c)-->(french)
 RETURN c, l;
+```
 
-
-France's bordering countries who do not speak French
+All France's bordering countries who do not speak French:
+```
 match (french:Language{name:'French'}), (f:Country{name:'France'})- [:BORDERS_WITH]->(bc)-[:SPEAKS]-> (language) 
 WHERE NOT (bc)-->(french)
 return f,bc, language
-
-Journey from France to Greece with the lowest number of countries in between. And to Zimbabwe?
+```
+Time for a 'grid traversal'. Countries have relationships with other countries based on the borders they share. We can travel from country country over these relationships. For example to find (one of) the shortest path(s) from France to Greece, use the following query: 
 ```
 Match path = shortestpath( (f:Country{name:"France"}) –[:BORDERS_WITH *1..6]-(p:Country{name:"Greece"})) return path
 ```
 
-An to Zimbabwe?
+And what about the path from France to Zimbabwe?
 ```
-Match path = shortestpath( (f:Country{name:"France"}) –[:BORDERS_WITH *1..126]-(p:Country{name:"Zimbabwe"})) return path
+Match path = shortestpath( (f:Country{name:"France"}) –[:BORDERS_WITH *1..30]-(p:Country{name:"Zimbabwe"})) return path
 ```
+Can you guess the lowest number countries you have to go through - and the countries involved - when you travel from France to India? Not something you would have guessed yourself.
+```
+Match path = shortestpath( (f:Country{name:"France"}) –[:BORDERS_WITH *1..15]-(p:Country{name:"India"})) return path
+```
+
 ## Comparing the Graph DB approach with the relational way of working
 
 The challenge discussed here is a Code One Session Recommendation Engine. Conferences such as CodeOne have many sessions to choose from. The challenge of picking the best sessions is a real one. My time is valuable – how do I ensure I do not end up wasting it on sessions by inarticulate or uninspiring speakers?
@@ -307,3 +336,5 @@ Cypher Introduction - (Neo4J Docs): https://neo4j.com/developer/cypher-query-lan
 Cypher Reference Card: https://neo4j.com/docs/cypher-refcard/current/ 
 
 Linkurious Enterprise is an on-premises graph visualization and analysis platform: https://linkurio.us/product/
+
+Article on Medium: Filter specific nodes from Cypher query results and paths https://medium.com/scientific-breakthrough-of-the-afternoon/filter-specific-nodes-from-cypher-qeury-results-and-paths-98674f792dec 

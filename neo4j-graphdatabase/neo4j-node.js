@@ -10,7 +10,7 @@ const session = driver.session(neo4j.WRITE);
 var countriesDocumentURL = "https://raw.githubusercontent.com/mledoze/countries/master/countries.json"
 async function addConstraints(tx) {
     console.log(`Adding Constraints`)
-    return tx.run('CREATE CONSTRAINT ON (l:Language) ASSERT l.name IS UNIQUE').then(tx.run('CREATE CONSTRAINT ON (c:Country) ASSERT c.name IS UNIQUE').then(tx.run('CREATE CONSTRAINT ON (r:Region) ASSERT r.name IS UNIQUE')));
+    return tx.run('CREATE CONSTRAINT ON (l:Language) ASSERT l.name IS UNIQUE').then(tx.run('CREATE CONSTRAINT ON (c:Country) ASSERT c.name IS UNIQUE').then(tx.run('CREATE CONSTRAINT ON (r:Region) ASSERT r.name IS UNIQUE').then(tx.run('CREATE CONSTRAINT ON (c:Country) ASSERT c.code IS UNIQUE'))));
 }
 
 
@@ -97,19 +97,23 @@ async function addBorderingCountries(tx, country) {
 
 
 request(countriesDocumentURL, async function (error, response, body) {
+
     var countries = JSON.parse(body)
-    // get unique region values
+    // get unique region values (see: https://codeburst.io/javascript-array-distinct-5edc93501dc4)
+    // take all elements in the countries array, for each of them: take the region element; create a s Set of all the resulting region values (a Set contains unique elements)
     var regions = [...new Set(countries.map(country => country.region))]
     var subregions = [...new Set(countries.map(country => country.subregion))]
     // see https://stackoverflow.com/questions/39837678/why-no-array-prototype-flatmap-in-javascript for this flatMap function
     const flatMap = (f, xs) =>
         xs.reduce((acc, x) =>
             acc.concat(f(x)), [])
+
+    // take all elements in the countries array, for each of them: take the array of languages ); create one big array of all small arrays of languages (this is what the flatmap does) and turn that big array into a Set (of unique language values)
     var languages = [...new Set(flatMap(country => Object.values(country.languages), countries))]
 
-    //now create objects in Neo4J for each category
-    console.log(JSON.stringify(languages))
+    // prepare constraints in the Neo4J database
     await session.writeTransaction(tx => addConstraints(tx))
+    //now create objects in Neo4J for each category
     await session.writeTransaction(tx => addLanguages(tx, languages))
     await session.writeTransaction(tx => addRegions(tx, regions))
     await session.writeTransaction(tx => addSubRegions(tx, subregions))
