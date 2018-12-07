@@ -129,9 +129,32 @@ request(countriesDocumentURL, async function (error, response, body) {
             await session.writeTransaction(tx => addBorderingCountries(tx, country))
     }
 
+    const fromCountry = 'France', toCountry = 'India'
 
-
-    session.close();
-    driver.close();
-    console.log("Done")
+    session.run("MATCH (c:Country) -[:IN]-> (r)  RETURN c,r")
+        .then(result => {
+            return result.records.map(record => { // Iterate through records
+                var country = record._fields[0].properties;
+                var region = record._fields[1].properties;
+                console.log(`${country.name} (Capital: ${country.capital}, Region: ${region.name})`); // Access the name property from the RETURN statement
+            });
+        })
+        .then(() => session.run(`Match path = shortestpath( (f:Country{name:$from}) –[:BORDERS_WITH *1..15]-(p:Country{name:$to})) return path
+                                 `
+            , { from: fromCountry, to: toCountry }
+        )
+            .then(result => {
+                return result.records.map(record => { // Iterate through records
+                    var segments = record._fields[0].segments;
+                    var path = '';
+                    segments.forEach(segment => path = path.concat(segment.start.properties.name + '|'))
+                    path = path.concat(segments[segments.length - 1].end.properties.name)
+                    console.log(`Path from ${fromCountry} to ${toCountry}: ${path}`)
+                });
+            })
+            .then(() => {
+                session.close();
+                driver.close();
+                console.log("Done - closed Neo4J Session and Driver")
+            })); // Always remember to close the session
 });

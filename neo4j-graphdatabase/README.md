@@ -338,3 +338,5 @@ Cypher Reference Card: https://neo4j.com/docs/cypher-refcard/current/
 Linkurious Enterprise is an on-premises graph visualization and analysis platform: https://linkurio.us/product/
 
 Article on Medium: Filter specific nodes from Cypher query results and paths https://medium.com/scientific-breakthrough-of-the-afternoon/filter-specific-nodes-from-cypher-qeury-results-and-paths-98674f792dec 
+
+Blog Article: Using the Neo4j Driver with NodeJS  https://www.adamcowley.co.uk/javascript/using-the-neo4j-driver-with-nodejs/
