@@ -144,7 +144,7 @@ After the creation of the module is complete the page is refreshed. You can scro
 
 Click on `Create Handler` to create a handler for a simple GET request. Select the defaults of Method (GET) and Source Type (specify type )Collection Query). In the Source area, paste the following SQL Query:
 ```
-
+select * from employees
 ``` 
 Click on `Create Handler`.  
 
