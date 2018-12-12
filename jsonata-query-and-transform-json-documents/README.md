@@ -6,6 +6,8 @@ JSONata is a lightweight query and transformation language for JSON data. It rem
 
 Try out JSONata in the live browser based JSONata explorer:  http://try.jsonata.org/ 
 
+Note: see below for running the JSONata Exerciser locally (for example in case the site is not available)
+
 Some expressions on the example Account document:
 
 Get the name of of the first product in the first order: `{"name": Account.Order[0].Product[0]."Product Name"}` (or: `Account.Order[0].Product[0]."Product Name"`)
@@ -37,6 +39,28 @@ Account.Order.
           }
 }
 ```
+
+### Run JSONata Exerciser locally
+
+The Webapplication to try out JSONata is available on GitHub at: https://github.com/jsonata-js/jsonata-exerciser.
+
+You can run this application locally with the following steps:
+1. Run a container with Node runtime:
+```
+docker run -it --rm -p 8080:3000 node:10 bash
+```
+2. Clone the GitHub Repository for JSONata Exerciser:
+```
+git clone  https://github.com/jsonata-js/jsonata-exerciser
+```
+3. Start the application 
+cd jsonata-exerciser
+rm package-lock.json
+npm install
+npm start
+```
+
+The JSONata exerciser can then be accessed in a browser on your laptop at port 8080: `127.0.0.1:8080` or at the IP address assigned to the VM running the Docker engine: `http://192.168.188.142:8080` 
 
 ## Use JSONdata from Node JS
 JSONata has been implemented in JavaScript and can be used in a browser client as well as in a server side Node JS application. Here we will take a look at the latter.
