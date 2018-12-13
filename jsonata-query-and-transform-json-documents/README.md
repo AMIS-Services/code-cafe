@@ -56,6 +56,7 @@ docker run -it --rm -p 8080:3000 node:10 bash
 git clone  https://github.com/jsonata-js/jsonata-exerciser
 ```
 3. Start the application 
+```
 cd jsonata-exerciser
 rm package-lock.json
 npm install
