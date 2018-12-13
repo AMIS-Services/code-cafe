@@ -6,6 +6,8 @@ JSONata is a lightweight query and transformation language for JSON data. It rem
 
 Try out JSONata in the live browser based JSONata explorer:  http://try.jsonata.org/ 
 
+(13 Dec 2018: an alternative instance is available at: http://docs.jsonata.org/jsonata-exerciser/)
+
 Note: see below for running the JSONata Exerciser locally (for example in case the site is not available)
 
 Some expressions on the example Account document:
