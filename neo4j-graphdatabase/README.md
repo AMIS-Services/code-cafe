@@ -35,13 +35,13 @@ Note: you may need to use `:server connect` followed by login with neo4j/<your n
 A small graph database with movies, directors and actors is created. A graphical overview is presented of the data - the nodes and edges clearly visible. The guide will subsequently demonstrate the Cypher command for performing queries against this data set.
 
 ## Create a small little graph
-
+```
 CREATE (Bob:Person{name:'Bob'}) -[:FRIEND_OF]->(Jim:Person{name:'Jim'})
 CREATE (Lisa:Person{name:'Lisa'}) -[:FRIEND_OF]->(Jim)
 CREATE (Marie:Person{name:'Marie'}) -[:FRIEND_OF]->(Lisa)
 CREATE (Angela:Person{name:'Angela'}) -[:FRIEND_OF]->(Lisa)
 CREATE (Angela) -[:FRIEND_OF]->(Marie)
-
+```
 Now also create the reciprocal relationships (everyone who is friend of someone else will now get someone else as friend as well):
 ```
 MATCH (f1)-[:FRIEND_OF]-> (f2)
