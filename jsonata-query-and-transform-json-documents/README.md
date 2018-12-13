@@ -1,10 +1,10 @@
 # Explore JSONata
 
-JSONata is a lightweight query and transformation language for JSON data. It reminds me of XPath and XSLT or XQuery. Queries and transformations can be expressed in JSONata using declarative and intuitive syntax (for example: expression Account.Order[0].OrderID to quert the OrderID property of the first Order element in an Account object). The npm module `jsonata` provides a JavaScript implementation that can be used in Node JS and in client side browser code. 
+JSONata is a lightweight query and transformation language for JSON data. It reminds me of XPath and XSLT or XQuery. Queries and transformations can be expressed in JSONata using declarative and intuitive syntax (for example: expression Account.Order[0].OrderID to quert the OrderID property of the first Order element in an Account object). The npm module `jsonata` provides a JavaScript implementation that can be used in Node JS and in client side browser code.
 
 ## Try Out JSONata in browser-based Explorer tool
 
-Try out JSONata in the live browser based JSONata explorer:  http://try.jsonata.org/ 
+Try out JSONata in the live browser based JSONata explorer:  http://try.jsonata.org/
 
 (13 Dec 2018: an alternative instance is available at: http://docs.jsonata.org/jsonata-exerciser/)
 
@@ -22,7 +22,7 @@ Average height of all items: `$average(Account.Order.Product."Description"."Heig
 
 A document with some aggregate values:
 ```
-{ "total number of items": Account.$sum(Order.Product[]."Quantity") 
+{ "total number of items": Account.$sum(Order.Product[]."Quantity")
 , "total cost": $sum(Account.Order.Product.(Price * Quantity))
 , "average height":$average(Account.Order.Product."Description"."Height")
 , "longest product name": $max(Account.Order.Product."Description".$length("Product Name"))
@@ -31,12 +31,12 @@ A document with some aggregate values:
 
 A nicely transformed orders document:
 ```
-Account.Order. 
+Account.Order.
 {"order": { "id": OrderID
           , "products": $.Product[]. {"name": $."Product Name"
                                      ,"price": $."Price"
                                      ,"colour" : $."Description".Colour
-                                     } 
+                                     }
           ,"numberOfItems" : $sum($.Product[]."Quantity")                           
           }
 }
@@ -55,7 +55,7 @@ docker run -it --rm -p 8080:3000 node:10 bash
 ```
 git clone  https://github.com/jsonata-js/jsonata-exerciser
 ```
-3. Start the application 
+3. Start the application
 ```
 cd jsonata-exerciser
 rm package-lock.json
@@ -63,15 +63,15 @@ npm install
 npm start
 ```
 
-The JSONata exerciser can then be accessed in a browser on your laptop at port 8080: `127.0.0.1:8080` or at the IP address assigned to the VM running the Docker engine: `http://192.168.188.142:8080` 
+The JSONata exerciser can then be accessed in a browser on your laptop at port 8080: `127.0.0.1:8080` or at the IP address assigned to the VM running the Docker engine: `http://192.168.188.142:8080`
 
 ## Use JSONdata from Node JS
 JSONata has been implemented in JavaScript and can be used in a browser client as well as in a server side Node JS application. Here we will take a look at the latter.
 
-To run a clean Node environment, execute the following command: 
+To run a clean Node environment, execute the following command:
 `docker run -it --rm -p 8080:8080 -v "$PWD":/usr/src/app  node:10 bash`
 
-This runs a container with the Node 10 run time environment, with a mapping of the current working directory into the directory /usr/src/app inside the container and with port 8080 in the container exposed at port 8080 on the Docker host. This allows us to run a Node application that can handle HTTP requests at port 8080. 
+This runs a container with the Node 10 run time environment, with a mapping of the current working directory into the directory /usr/src/app inside the container and with port 8080 in the container exposed at port 8080 on the Docker host. This allows us to run a Node application that can handle HTTP requests at port 8080.
 
 Note: if you are working in a `vagrant ssh` shell, you may want to copy the directory jsonata-query-and-transform-json-documents into the directory that contains the Vagrantfile. This makes the directory available inside the Linux environment under /vagrant. If you run the docker node container from this /vagrant directory, then you will have the Node application sources available inside the container - in the mounted /usr/src/app directory. Copy this mounted, read-only directory to a read-write container owned directory: `cp -r /usr/src/app /app` and work in the /app directory.
 
@@ -99,10 +99,27 @@ For example on Linux: `curl 'http://localhost:8080/?name=ra&region=Europe'`
 
 From the browser: `http://192.168.188.142:8080/?name=x&region=Americas`
 
+### Use Dockerfile
+
+Build and run docker container:
+```
+ docker build -t msm-countries .
+ docker run -d -p 8080:8080 msm-countries
+```
+Request in browser
+```
+http://localhost:8080/?name=ra&region=Europe
+```
+Stop container
+```
+docker ps # The container to stop: msm-countries CONTAINER ID
+docker stop <CONTAINER ID>
+```
+
 ## Resources
 Homepage for JSONata: http://jsonata.org/
-Documentation for JSONata: http://docs.jsonata.org/ 
-npm module for JSONata: https://www.npmjs.com/package/jsonata 
-GitHub Repo: https://github.com/jsonata-js/jsonata 
+Documentation for JSONata: http://docs.jsonata.org/
+npm module for JSONata: https://www.npmjs.com/package/jsonata
+GitHub Repo: https://github.com/jsonata-js/jsonata
 
-Support for JSONata in Elastic Stack: https://www.elastic.io/jsonata-transformation-language-building-complex-workflows/ 
+Support for JSONata in Elastic Stack: https://www.elastic.io/jsonata-transformation-language-building-complex-workflows/
