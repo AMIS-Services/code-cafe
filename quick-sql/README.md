@@ -68,7 +68,7 @@ Even these few additional annotations make a substantial difference. A history t
 
 Adding the /api annotation has an additional spectacular effect of generating a PL/SQL Table API. 
 
-###Executing/Trying out Generated SQL - using LiveSQL
+### Executing/Trying out Generated SQL - using LiveSQL
 If you have an Oracle Database at your disposal, you could easily try out the generated SQL scripts. Even if you do not, you still do. That may sound a little cryptic. The website LiveSQL - https://livesql.oracle.com/ - provides access to personal Oracle Database session. Through the browser interface, you can execute SQL scripts - DDL and DML to create objects and data and Queries to inspect the data. LiveSQL is a neat environment to verify the results from QuickSQL. And in fact, QuickSQL is also embedded in LiveSQL. Note that LiveSQL also offers hundreds of samples of useful SQL syntax and statements that you can reuse of at least use as inspiration.
 
 Navigate to https://livesql.oracle.com/ and login with your Oracle account. 
