@@ -164,7 +164,7 @@ MATCH (adams:Person{name:'ADAMS'}) - [:WORKS_FOR ]-> (boss) <- [:WORKS_FOR *1..]
 Try with Scott instead of Adams.
 
 
-##Accessing Neo4J from Node JS 
+## Accessing Neo4J from Node JS 
 Neo4J has a REST API that can be leveraged from any technology that can speak HTTP. Additionally, there are client libraries for many different technoloystacks, We will now take a look at using Neo4J from Node JS.
 
 To run a clean Node environment, execute the following command: 
@@ -318,7 +318,9 @@ match (lucas:Person {name:'Lucas Jellema'}) - [:ATTENDS] -> (s1) <- [:ATTENDS] -
  
 // find presenters valued by the people who attended the same sessions as I did:
 match (lucas:Person {name:'Lucas Jellema'}) - [:ATTENDS] -> (s1) <- [:ATTENDS] - (p2) - [:VALUES] -> (p3) RETURN p3
- 
+```
+Finally the query to answer my question for recommendations of sessions presented by speakers who are values by people who attended the same sessions I attended:
+```
 // find sessions presented by presenters valued by the people who attended the same sessions as I did:
 match (lucas:Person {name:'Lucas Jellema'}) - [:ATTENDS] -> (session1) 
   <- [:ATTENDS] - (recommender) - [:VALUES] -> (speaker) - [:PRESENTS] -> (session) RETURN session, speaker.name, recommender.name
