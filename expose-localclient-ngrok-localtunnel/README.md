@@ -97,3 +97,5 @@ Vagrant Share: https://www.vagrantup.com/docs/share/
 
 LocalTunnel: https://localtunnel.me/ and https://github.com/localtunnel/localtunnel 
 (LocalTunnel custom server: https://github.com/localtunnel/server)
+
+Alternative solution: http://serveo.net/ (no client agent required) - with also the option to 'self serve' 
