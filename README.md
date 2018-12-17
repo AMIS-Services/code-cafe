@@ -54,3 +54,9 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * Browser Web Share API - https://hackernoon.com/web-share-api-the-coolest-but-simple-e3bb7ec9bb02 , https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share and Web Share Target API: https://developers.google.com/web/updates/2018/12/web-share-target  (currently only Chrome?)
 * Voice enabled Web Application using AWS Lex API (to interpret audio input) - https://aws.amazon.com/blogs/machine-learning/capturing-voice-input-in-a-browser/    
 * Jupyter Notebooks for Data Gathering, Exploration, Visualization, Wrangling (Filtering, Conversion, Transformation, Enrichment) and Analysis: To run Jupyter Notebook in container: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-scipy-notebook ; run live notebooks online based on GitHub repo: https://mybinder.org/ 
+* Cypress Testing - automated unit testing of browser applications (Selenium++): https://www.cypress.io/ 
+* Rechart - React UI library based on d3.js for charts in React applications
+* AWS AppSync - Cloud service for implementing a GraphQL server
+* HotJar - client side monitoring and user action tracking - https://www.hotjar.com/home2 
+* Adobe XD - design tool for web and mobile apps - https://www.adobe.com/products/xd.html 
+* KOA - NPM/Node alternative for Express - https://koajs.com/ 
