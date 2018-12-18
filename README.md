@@ -60,3 +60,6 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * HotJar - client side monitoring and user action tracking - https://www.hotjar.com/home2 
 * Adobe XD - design tool for web and mobile apps - https://www.adobe.com/products/xd.html 
 * KOA - NPM/Node alternative for Express - https://koajs.com/ 
+* GitLab - DevOps lifecycle platform - https://about.gitlab.com/ 
+* Code Analysis - Java Dynamic & Static Callgraph: https://github.com/gousiosg/java-callgraph , Ioh - Node Dynamic Node Call Analysis   https://github.com/maierfelix/Iroh
+
