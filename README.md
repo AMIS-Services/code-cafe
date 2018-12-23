@@ -12,30 +12,32 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * ~~ 13/12 Vagrant (& VirtualBox) - tool for efficient management of VMs and a local Docker Engine); especially useful for running Docker on Windows laptops~~
 * ~~ 13/12 QuickSQL - free cloud service for rapid generation of SQL DDL and DML scripts for tables, generated test data, constraints, views, triggers and APIs~~
 * ~~13/12 Neo4j - open source Graph Database~~
+* ~~31/01 Traefik - Load Balancer and Proxy ("Cloud Native Edge Router") https://traefik.io/~~~
+* ~~31/01 Powershell~~
+* ~~31/01 ZSH and OhMyZSH - https://ohmyz.sh/  Linux Shell ~~
+* ~~31/01 Katacoda - browser based sandboxes and tutorials environment (with the option of defining your own tutorials running on Katacoda servers)~~
+* ~~31/01 Cypress Testing - automated unit testing of browser applications (Selenium++): https://www.cypress.io/ ~~
+
 * Google Container Diff - utility to compare two container images and find differences
 * Skaffold - command line tool that facilitates continuous development for Kubernetes applications
 * Oracle Self Service Integration - cloud service for specifying and running (poll based) integration recipes
 * GraphQL - Apollo - alternative for REST APIs
-* Traefik - Load Balancer and Proxy ("Cloud Native Edge Router") https://traefik.io/
 * WebSpeech API - speech to text support in HTML5 browsers
 * Apache Drill - SQL on non-SQL sources such as JSON, CSV, Hadoop 
 * Apache Camel - light weight Java based integration framework
 * Oracle SQL Pattern Matching (Match Recognize)
-* Powershell
 * Terraform
 * Kafka Connect
 * JShell - REPL CLI for Java
 * LiveSQL - browser based environment for experimenting with (Oracle) SQL
 * Google ContainerTools - collection of open source tools from Google for container and K8S development and management
 * KubeApps - Helm based deployments of dozens of (complex) applications and stacks onto Kubernetes cluster
-* Katacoda - browser based sandboxes and tutorials environment (with the option of defining your own tutorials running on Katacoda servers)
 * Dash -  Documentation Browser and Code Snippet Manager. Dash stores snippets of code and instantly searches offline documentation sets for 200+ APIs, 100+ cheat sheets and more https://kapeli.com/dash (MacOS and iOS)
 * Silver Searcher - source code search utility (https://github.com/ggreer/the_silver_searcher)
 * OneNote (Office 365)
 * Wappalyzer - a Chrome extension that lets you visit any webpage and see what stack was used to build it
 * CloudFlare - CDN, WebApp Firefall, ...
 * Elastic Stack for Logging/Monitoring: Beads, LogStash, Elastic Index, Kibana
-* ZSH and OhMyZSH - https://ohmyz.sh/  Linux Shell 
 * ASCIIDoctor - Asciidoctor (https://asciidoctor.org/) is a text processor and publishing toolchain that converts AsciiDoc files into HTML5, PDF, EPUB, and MOBI.
 * Graal VM - create polyglot applications - for example Java application that can call Node JS/JavaScript and Python libraries or Node application that hooks into Java based logic
 * Browser Developer tools - Console, Debug, Traffic Inspector, ...
@@ -54,7 +56,6 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * Browser Web Share API - https://hackernoon.com/web-share-api-the-coolest-but-simple-e3bb7ec9bb02 , https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share and Web Share Target API: https://developers.google.com/web/updates/2018/12/web-share-target  (currently only Chrome?)
 * Voice enabled Web Application using AWS Lex API (to interpret audio input) - https://aws.amazon.com/blogs/machine-learning/capturing-voice-input-in-a-browser/    
 * Jupyter Notebooks for Data Gathering, Exploration, Visualization, Wrangling (Filtering, Conversion, Transformation, Enrichment) and Analysis: To run Jupyter Notebook in container: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-scipy-notebook ; run live notebooks online based on GitHub repo: https://mybinder.org/ 
-* Cypress Testing - automated unit testing of browser applications (Selenium++): https://www.cypress.io/ 
 * Rechart - React UI library based on d3.js for charts in React applications
 * AWS AppSync - Cloud service for implementing a GraphQL server
 * HotJar - client side monitoring and user action tracking - https://www.hotjar.com/home2 
@@ -62,4 +63,7 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * KOA - NPM/Node alternative for Express - https://koajs.com/ 
 * GitLab - DevOps lifecycle platform - https://about.gitlab.com/ 
 * Code Analysis - Java Dynamic & Static Callgraph: https://github.com/gousiosg/java-callgraph , Ioh - Node Dynamic Node Call Analysis   https://github.com/maierfelix/Iroh
+* MicroK8S - https://microk8s.io/?utm_source=MOTD&utm_medium=MOTD&utm_campaign=1)FY19_Cloud_K8
+* Aciinema - https://asciinema.org/ Free Terminal Recording software (including copy & paste from recordings )
+* LogRocket - client side log consolidation and analysis - learn what your users are doing in their browsers https://logrocket.com/signup/ (LogRocket is a frontend logging tool that lets you replay problems as if they happened in your own browser. Instead of guessing why errors happen, or asking users for screenshots and log dumps, LogRocket lets you replay the session to quickly understand what went wrong.)
 
