@@ -66,4 +66,6 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * MicroK8S - https://microk8s.io/?utm_source=MOTD&utm_medium=MOTD&utm_campaign=1)FY19_Cloud_K8
 * Aciinema - https://asciinema.org/ Free Terminal Recording software (including copy & paste from recordings )
 * LogRocket - client side log consolidation and analysis - learn what your users are doing in their browsers https://logrocket.com/signup/ (LogRocket is a frontend logging tool that lets you replay problems as if they happened in your own browser. Instead of guessing why errors happen, or asking users for screenshots and log dumps, LogRocket lets you replay the session to quickly understand what went wrong.)
+* Read the Docs - https://readthedocs.org/ open platform for creating, managing, publishing software documentation 
+* Mark down editor - online or local: MDE https://simplemde.com/ and local: MarkDownPad - https://markdownpad.com/ 
 
