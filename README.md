@@ -68,4 +68,10 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * LogRocket - client side log consolidation and analysis - learn what your users are doing in their browsers https://logrocket.com/signup/ (LogRocket is a frontend logging tool that lets you replay problems as if they happened in your own browser. Instead of guessing why errors happen, or asking users for screenshots and log dumps, LogRocket lets you replay the session to quickly understand what went wrong.)
 * Read the Docs - https://readthedocs.org/ open platform for creating, managing, publishing software documentation 
 * Mark down editor - online or local: MDE https://simplemde.com/ and local: MarkDownPad - https://markdownpad.com/ 
+* Self service integration - Microsoft Flow, Oracle Self Service Integration, IFTTT, Zapier (https://zapier.com/) 
 
+* Imgur - Image sharing/manipulation (animated GIF generation) - https://imgur.com/vidgif
+* LetsEncrypt - Let’s Encrypt is a free, automated, and open Certificate Authority. https://letsencrypt.org/
+* JSONPath and/or JMESPath - JSON querying (and light weight transformation with JMESPath) - (https://goessner.net/articles/JsonPath/) in many client libraries/languages including Java and Node JS- https://github.com/json-path/JsonPath, Online JSON Path Evaluator http://jsonpath.com/; introduction to JSONPath: https://www.baeldung.com/guide-to-jayway-jsonpath ; NPM Package: https://www.npmjs.com/package/jsonpath 
+OpenVAS - http://www.openvas.org/ - a full-featured vulnerability scanner. OpenVAS is available as packages in multiple Linux distros, in source code form, and as a virtual appliance that can be loaded into a VM on Windows. It is also part of Kali Linux.
+mitmproxy - https://mitmproxy.org/ is a free and open source interactive HTTPS proxy. 
