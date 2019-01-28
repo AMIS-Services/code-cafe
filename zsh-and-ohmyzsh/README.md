@@ -38,19 +38,18 @@ zsh --version
 1. Autocd option -- "executing" a directory will "cd" to it instead
 2. Show exit status of last command
 3. Filename correction during completion
-4. Shorthand notation for unique combinations of directives: if dir1/x exists and dir2 exists, then "dir/x<tab>" completes to dir1/x
-5. `some-command`<TAB> -- expand output of some-command right in your shell line
+4. Shorthand notation for unique combinations of directives: if dir1/x exists and dir2 exists, then "dir/x" `tab` completes to dir1/x
+5. `some-command` press `tab` -- expand output of some-command right in your shell line
 6. Suffix aliases: Associate files with specific extensions with default applications. E.g.:
    ```console
    $ alias -s cpp=vim
    ```
    Executing test.cpp will open the file using vim
-7. Auto-complete: when typing `kill` and pressing <tab> you will see all the processes one can kill
+7. Auto-complete: when typing `kill` and pressing `tab` you will see all the processes one can kill
 8. Enables you to use Oh My Zsh :)
 
 These are just some of my favorites, for more see:
-https://gist.github.com/ashrithr/5793891
-https://code.joejag.com/2014/why-zsh.html
+https://gist.github.com/ashrithr/5793891 and https://code.joejag.com/2014/why-zsh.html
 
 #### Installing Oh My Zsh
 
