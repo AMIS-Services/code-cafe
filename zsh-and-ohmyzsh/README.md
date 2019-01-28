@@ -1,8 +1,10 @@
-#### Why would you use Zsh or OhMyZsh?
+# ZSH and Oh My Zsh
+
+## Why would you use them?
 
 Because you will be so very very productive! Zsh is targeted towards a developer audience and installing the Oh My Zsh framework on top of it enables you to install plugins for programs and features you often use. You won't need to type out entire git commands for instance, when using the git-plugin you'll have access to almost any git command by just typing 3 characters. After installing ZSH there is no more need to navigate folders by typing `cd`, just type your paths and press enter. There is also no more need to type the entire path, just type the first letter of each directive, as long as the combination is unique you can autocomplete it by pressing tab. Are you worried about learning all the commands of a new shell? Don't! You won't have to learn any new commands to replace bash, you can still use 99% of those.
 
-#### Prerequisites
+### Prerequisites
 
 In order to experience ZSHell and OhMyZsh yourself, you will need a Unix-like operating system (Linux or macOS). If you are reading this on a Windows machine, refer to https://github.com/AMIS-Services/code-cafe/tree/master/linux-and-docker-host-on-windows-machine to get instructions on how to set up an Ubuntu environment using VirtualBox.
 
@@ -64,7 +66,7 @@ via wget
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
-### Configuring plugins
+#### Configuring plugins
 
 There are lots of plugins available. Browse https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins. Once you see one you like, add it to your .zshrc file.
 
@@ -72,7 +74,7 @@ There are lots of plugins available. Browse https://github.com/robbyrussell/oh-m
 vi ~/.zshrc
 ```
 
-### Themes
+#### Themes
 
 ### The big Oh My Zsh features
 
@@ -80,5 +82,5 @@ vi ~/.zshrc
    `..` instead of `cd ..`
    `...` instead of `cd ../..`
    `....` instead of `cd ../../..`
-   etc
+   etc.
 2.
