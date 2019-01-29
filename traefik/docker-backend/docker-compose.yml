@@ -13,7 +13,6 @@ services:
       - /dev/null:/traefik.toml
     networks:
       - cafenet
-      - prometheus
 
   code-cafe-machine:
     image: katacoda/docker-http-server
@@ -33,6 +32,3 @@ services:
 
 networks:
   cafenet:
-   prometheus: 
-    external:
-      name: dockerprometheus_back-tier
