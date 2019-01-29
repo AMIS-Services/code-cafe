@@ -25,27 +25,12 @@ defaultEntryPoints = ["http"]
 
     # Buckets for latency metrics
     buckets = [0.1,0.3,1.2,5.0]
-
-# https://docs.traefik.io/configuration/api/  
 [api]
   # Name of the related entry point
-  #
-  # Optional
-  # Default: "traefik"
-  #
   entryPoint = "traefik"
 
   # Enable Dashboard
-  #
-  # Optional
-  # Default: true
-  #
   dashboard = true
-
-# Enable Web Provider - note: this is deprecated: https://docs.traefik.io/configuration/backends/web/ .
-[web]
-# Web administration port.
-address = ":8080"
 
 [file]
 watch = true
