@@ -3,7 +3,7 @@
 TL;DR;
 Traefik is an edge router, first released in 2015. It does load balancing, routing, IP white listing, SSL offloading, header rewriting, health checking, circuit breaking and service discovery. It supports dynamic reconfiguration, exposes metrics for monitoring and can be run in cluster configuration. Traefik plays very nicely with orchestation platforms - such as Kubernetes, Mesos, Swarm and Docker Engine - as well as service discovery components and configuration tools such as Consul, Eureka, etcd, Zookeeper. 
 
-Traefik compares with HAProxy, NGinxm, Apache HTTP Server, AWS Elastic Load Balancing, Kong, Zuul and even hardware load balancers.
+Traefik compares with HAProxy, NGinxm, Apache HTTP Server, AWS Elastic Load Balancing, Kong, Zuul and even Varnish (web application accelerator also known as a caching HTTP reverse proxy) and hardware load balancers.
 
 (traefik.io)[https://traefik.io/] 
 
@@ -80,7 +80,14 @@ To check on the logging from the container running Traefik:
 ```
 docker logs <container id> -- follow
 ```
+Now use the following command to send a request to your favorite search engine *search.com*:
+```
+curl -H Host:search.com http://localhost
+```
+You will find that if you repeat this command a few times, you will get different results.
 
+
+### Test from the browser
 For the best results, you can now add the following host definitions to the hosts file on your laptop
 
 (on Windows this file is located in C:\Windows\System32\drivers\etc)
@@ -90,7 +97,7 @@ For the best results, you can now add the following host definitions to the host
 
 Replace 192.168.188.142 with whatever is the IP address of your local VM.
 
-Enter `http:\\search.com` in the location bar of your brower and press enter. You should be taken two one of the search services configured in traefik.toml. Navigate once more to `http:\\search.com` - in the same or a different browser window. You will get to a different search service. Repeat this a few times.
+Enter `http:\\search.com` in the location bar of your browser and press enter. You should be taken two one of the search services configured in traefik.toml. Navigate once more to `http:\\search.com` - in the same or a different browser window. You will get to a different search service. Repeat this a few times.
 
 If you change the relative weight settings in `traefik.toml` or you uncomment the Yahoo search service or you change the order of the search service - you will influence the behavior of Traefik in exactly the way you expect.
 
@@ -167,14 +174,28 @@ The responses should be produced by two different containers - because Traefik b
 
 Feel free to start one or several additional containers (using `docker-compose scale code-cafe-machine=4`) and check on the effect this has on Traefik. You can also scale down the number of containers, and verify the impact of that.
 
-## 3. How to Monitor a Traefik Reverse Proxy with Prometheus
+## 3. Bonus: How to Monitor a Traefik Reverse Proxy with Prometheus
 How to Monitor a Traefik Reverse Proxy with Prometheus [https://www.brianchristner.io/how-to-monitor-traefik-reverse-proxy-with-prometheus/]
+
+### Other fun topics
+* Health Checks
+* Circuit Breaking (take a badly performing backend server out of the pool)
+* Header Manipulation
+* Timeout
+* IP White Listing
+* Canary Release (using load balancing with uneven weights for new release end point vs existing release)
+* Throttling (rate limiting)
 
 ## Resources
 Traefik Homepage: [https://traefik.io/]
 Traefik Documentation: [https://docs.traefik.io/] 
 
+Getting Started Scenario: [https://docs.traefik.io/]
+
+Nice GitHub Repo with simple test to get started with: https://github.com/sirech/traefik-test  (discovery, routing, Password, Load Balancing, SSL Termination, Mutual TLS)
+
 Katacoda Scenario - Load Balance Containers using Traefik:  [https://www.katacoda.com/courses/traefik/deploy-load-balancer] 
 
 Amazing Traefik - collection of resources: [https://github.com/containous/traefik/wiki/Awesome-Traefik] 
 
+Note: shortcut command to remove all Docker containers: `docker rm $(docker ps -aq)`
