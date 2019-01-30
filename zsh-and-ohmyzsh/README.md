@@ -2,11 +2,11 @@
 
 ## Why would you use them?
 
-Because you will be so very very productive! Zsh is targeted towards a developer audience and installing the Oh My Zsh framework on top of it enables you to install plugins for programs and features you often use. You won't need to type out entire git commands for instance, when using the git-plugin you'll have access to almost any git command by just typing 3 characters. After installing ZSH there is no more need to navigate folders by typing `cd`, just type your paths and press enter. There is also no more need to type the entire path, just type the first letter of each directive, as long as the combination is unique you can autocomplete it by pressing tab. Are you worried about learning all the commands of a new shell? Don't! You won't have to learn any new commands to replace bash, you can still use 99% of those.
+Because your productivity will skyrocket! Zsh is targeted towards a developer audience and installing the Oh My Zsh framework on top of it enables you to install plugins for programs and features you often use. You won't need to type out entire git commands for instance, when using the git-plugin you'll have access to almost any git command by just typing 3 characters. After installing ZSH there is no more need to navigate folders by typing `cd`, just type your paths and press enter. There is also no more need to type the entire path, just type the first letter of each directive, as long as the combination is unique you can autocomplete it by pressing tab. Are you worried about learning all the commands of a new shell? Don't! You won't have to learn any new commands to replace bash, you can still use 99% of those.git l
 
 ### Prerequisites
 
-In order to experience ZSHell and OhMyZsh yourself, you will need a Unix-like operating system (Linux or macOS). If you are reading this on a Windows machine, refer to https://github.com/AMIS-Services/code-cafe/tree/master/linux-and-docker-host-on-windows-machine to get instructions on how to set up an Ubuntu environment using VirtualBox.
+In order to experience ZShell and OhMyZsh yourself, you will need a Unix-like operating system (Linux or macOS). If you are reading this on a Windows machine, refer to https://github.com/AMIS-Services/code-cafe/tree/master/linux-and-docker-host-on-windows-machine to get instructions on how to set up an Ubuntu environment using VirtualBox.
 
 - curl or wget should be installed
 - git should be installed
@@ -65,6 +65,21 @@ via wget
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
+### The big Oh My Zsh features
+
+1. Plugins - You can install plugins for programs such as Git, AWS, Docker, JHipster. The git is by far my favorite. Take a look at all the shortcuts the git plugin provides:  
+   https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
+   It also gives you the status of your repo in a glance. Green: no changes, yellow with circle icon: untracked files, yellow with plus icon: tracked files, etc.
+2. Themes - There is a whole community sharing themes that alter what your console looks like. Or you could create your own theme.
+3. A whole lot of aliases
+   `..` instead of `cd ..`
+   `...` instead of `cd ../..`
+   `....` instead of `cd ../../..`
+   `rd` instead of `rmdir`
+   `_` instead of `sudo`
+   .. and the list continues, type `alias` to reference them all
+4. Further configuration of Zsh, enabling advanced features
+
 #### Configuring plugins
 
 There are lots of plugins available. Browse https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins. Once you see one you like, add it to your .zshrc file.
@@ -75,11 +90,4 @@ vi ~/.zshrc
 
 #### Themes
 
-### The big Oh My Zsh features
-
-1. Aliases
-   `..` instead of `cd ..`
-   `...` instead of `cd ../..`
-   `....` instead of `cd ../../..`
-   etc.
-2.
+See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
