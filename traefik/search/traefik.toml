@@ -1,0 +1,60 @@
+# traefik.toml
+logLevel = "DEBUG"
+defaultEntryPoints = ["http"]
+[entryPoints]
+  [entryPoints.http]
+  address = ":80"
+
+# Ping definition
+[ping]
+  # Name of the related entry point
+  #
+  # Optional
+  # Default: "traefik"
+  #
+  entryPoint = "traefik"
+# Metrics definition
+# https://docs.traefik.io/configuration/metrics/
+
+[metrics]  
+  # To enable Traefik to export internal metrics to Prometheus
+  [metrics.prometheus]
+
+    # Name of the related entry point
+    entryPoint = "traefik"
+
+    # Buckets for latency metrics
+    buckets = [0.1,0.3,1.2,5.0]
+[api]
+  # Name of the related entry point
+  entryPoint = "traefik"
+
+  # Enable Dashboard
+  dashboard = true
+
+[file]
+watch = true
+
+# rules
+[backends]
+ # the backend called backendsearch represents multiple round robin load balanced search engines 
+ # requests forwarded to this backend will be distributed over the servers specified in this backend
+ [backends.backendsearch]
+    [backends.backendsearch.servers.server1]
+    url = "http://www.google.com"
+    weight = 1
+    [backends.backendsearch.servers.server2]
+    url = "http://www.bing.com:80"
+    weight = 1
+    [backends.backendsearch.servers.server3]
+    url = "http://www.duckduckgo.com:80"
+    weight = 1
+    #[backends.backendsearch.servers.server4]
+    #url = "http://www.yahoo.com:80"
+    #weight = 1
+
+[frontends]
+  [frontends.frontendsearch]
+  backend = "backendsearch"
+    [frontends.frontendsearch.routes.search-com]
+    rule = "Host:search.com"
