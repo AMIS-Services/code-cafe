@@ -1,0 +1,50 @@
+{
+  "component": {
+    "prefix": "component",
+    "body": [
+      "import * as React from 'react';",
+      "",
+      "class ${1:ComponentName} extends React.Component {",
+      "render(){",
+      "return <div>Hello World!</div>",
+      "}",
+      "}",
+      "",
+      "export default ${1:ComponentName}"
+    ]
+  },
+  "styledComponent": {
+    "prefix": "styledComponent",
+    "body": [
+      "import * as React from 'react';",
+      "import withStyles from '@material-ui/core/styles/withStyles';",
+      "",
+      "const styles = () => ({ root: {}})",
+      "",
+      "class ${1:ComponentName} extends React.Component {",
+      "render() {",
+      "return(<>hello world</>)",
+      "}",
+      "}",
+      "",
+      "export default withStyles(styles)(${1:ComponentName})"
+    ]
+  },
+  "connectedComponent": {
+    "prefix": "connectedComponent",
+    "body": [
+      "import * as React from 'react';",
+      "import { connect } from 'react-redux';",
+      "",
+      "class ${1:ComponentName} extends React.Component {",
+      "render() {",
+      "return(<>hello world</>)",
+      "}",
+      "}",
+      "",
+      "const mapStateToProps = ({}:{}) => ({})",
+      "",
+      "export default connect(mapStateToProps, {})(${1:ComponentName})"
+    ]
+  }
+}
