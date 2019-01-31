@@ -46,16 +46,18 @@ class LoginDialog extends React.Component {
 
   render() {
     return (
-      <Dialog open={this.props.open}>
+      <Dialog open={this.props.open} data-test="login-dialog">
         <DialogTitle className={this.props.classes.title}>Login</DialogTitle>
         <div className={this.props.classes.userFields}>
           <Input
+            data-test="email-input"
             inputRef={input => {
               this.emailRef = input;
             }}
             placeholder="Email"
           />
           <Input
+            data-test="password-input"
             type="password"
             inputRef={input => {
               this.passwordRef = input;
@@ -69,7 +71,9 @@ class LoginDialog extends React.Component {
           </Link>
         </div>
         <div className={this.props.classes.buttons}>
-          <Button onClick={this.handleLogin}>OK</Button>
+          <Button data-test="submit-button" onClick={this.handleLogin}>
+            OK
+          </Button>
           <Button onClick={this.props.handleClose}>Cancel</Button>
         </div>
       </Dialog>

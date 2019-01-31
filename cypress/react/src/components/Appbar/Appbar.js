@@ -61,7 +61,7 @@ class Appbar extends React.PureComponent {
     return (
       <UserContext.Consumer>
         {context => (
-          <div className={this.props.classes.root}>
+          <div className={this.props.classes.root} data-test="appbar">
             <div className={this.props.classes.title} onClick={this.goHome}>
               {this.props.title}
             </div>
@@ -79,6 +79,7 @@ class Appbar extends React.PureComponent {
             ) : (
               <>
                 <div
+                  data-test="login-button"
                   className={this.props.classes.userMenu}
                   onClick={() => {
                     this.setState({ isLoginDialogOpen: true });

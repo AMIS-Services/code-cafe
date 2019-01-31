@@ -84,6 +84,7 @@ class AccommodationCard extends React.Component {
               return context.user ? (
                 <footer>
                   <HouseIcon
+                    data-test="favorite-icon"
                     onClick={this.toggleFavorite}
                     className={
                       context.user.favoriteAccommodations.includes(_id)
