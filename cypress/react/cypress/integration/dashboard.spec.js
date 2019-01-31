@@ -59,7 +59,7 @@ context("dashboard", () => {
           .and("eq", "rgb(211, 211, 211)");
       });
 
-      it("shows the accommodations from the store", () => {
+      it("cypress can access the redux store and trigger dispatches", () => {
         // cy.login("bram.kaashoek@amis.nl", "123");
         cy.get("[data-test=accommodationCard]").should("exist");
         cy.window()
