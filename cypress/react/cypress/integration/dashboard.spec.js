@@ -1,4 +1,5 @@
-export const screenResolutions = [[1920, 1080], [1024, 1366], [360, 640]];
+import { screenResolutions } from "../support/helpers";
+import { createAccommodation } from "../../src/store/accommodations/actions";
 
 context("dashboard", () => {
   screenResolutions.forEach(screenResolution => {
@@ -21,7 +22,61 @@ context("dashboard", () => {
           })
           .first()
           .find("img")
-          .should("exist");
+          .should("exist")
+          .click();
+        cy.url().should("contain", "/accommodation/");
+      });
+
+      it("has the toggleable favorite house when logged in", () => {
+        cy.get("[data-test=favorite-icon]").should("not", "exist");
+
+        cy.login("bram.kaashoek@amis.nl", "123");
+
+        cy.get("[data-test=favorite-icon]")
+          .should("exist")
+          .should("have.length", 5)
+          .first()
+          .should("have.css", "fill")
+          .and("eq", "rgb(211, 211, 211)");
+
+        cy.get("[data-test=favorite-icon]")
+          .first()
+          .click()
+          .should("have.css", "fill")
+          .and("eq", "rgb(255, 0, 0)");
+
+        cy.reload();
+
+        cy.get("[data-test=favorite-icon]")
+          .first()
+          .should("have.css", "fill")
+          .and("eq", "rgb(255, 0, 0)");
+
+        cy.get("[data-test=favorite-icon]")
+          .first()
+          .click()
+          .should("have.css", "fill")
+          .and("eq", "rgb(211, 211, 211)");
+      });
+
+      it("shows the accommodations from the store", () => {
+        // cy.login("bram.kaashoek@amis.nl", "123");
+        cy.get("[data-test=accommodationCard]").should("exist");
+        cy.window()
+          .its("store")
+          .invoke("getState")
+          .its("accommodations")
+          .should("have.length", 5);
+
+        const accs = cy
+          .window()
+          .its("store")
+          .invoke("getState")
+          .its("accommodations");
+
+        // cy.window()
+        //   .its("store")
+        //   .invoke("dispatch", createAccommodation(accs[0]));
       });
     });
   });
