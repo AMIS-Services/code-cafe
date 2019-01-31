@@ -5,7 +5,7 @@ Traefik is an edge router, first released in 2015. It does load balancing, routi
 
 Traefik compares with HAProxy, NGinxm, Apache HTTP Server, AWS Elastic Load Balancing, Kong, Zuul and even Varnish (web application accelerator also known as a caching HTTP reverse proxy) and hardware load balancers.
 
-(traefik.io)[https://traefik.io/] 
+[traefik.io](https://traefik.io/) 
 
 ## 1. Getting Started with Traefik
 We will run Traefik in a Docker Container. This container is configured with two volume mappings: one to load the traefik.toml configuration file and the other to integrate with Docker engine - to be able to dynamically consume changes in container status and derive backend and frontend definitions (by reading Traefik specific labels on the containers).

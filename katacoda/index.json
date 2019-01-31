@@ -1,0 +1,54 @@
+{
+  "title": "Traefik and Docker Compose in action",
+  "description": "In this scenario, we will use `docker-compose` to start several containers that are behind a single Traefik edge router instance that performs routing and load balancing. Labels on the containers provide instructions to Traefik. Note that Traefik itself also runs in a Docker container.",
+  "difficulty": "beginner",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Run Traefik using Docker Compose",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Start a Docker Container that Traefik Routes traffic to",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Start a second Docker Container that Traefik also Routes traffic to",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Scale Up one of the Docker Contains and watch how Traefik starts load balancing",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "docker-compose.yml",
+          "target": "~/"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Traefik Dashboard",
+        "port": 8080
+      }
+    ],
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n",
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
