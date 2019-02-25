@@ -5,19 +5,28 @@ Note: in the Code Café, we can work with various technologies - browser based o
 
 Code Café sessions will usually not work with slides and presentations. Items are introduced with a brief introduction and a demonstration - followed by trying out!
 
+## On the menu of earlier Code Café sessions
+*  13/12 ngrok (& local tunnel) for exposing locally running services on the internet
+*  13/12 JSONata - XPath & XSLT/XQuery like expression language for retrieving data from and transforming JSON documents
+*  13/12 Vagrant (& VirtualBox) - tool for efficient management of VMs and a local Docker Engine); especially useful for running Docker on Windows laptops
+*  13/12 QuickSQL - free cloud service for rapid generation of SQL DDL and DML scripts for tables, generated test data, constraints, views, triggers and APIs
+* 13/12 Neo4j - open source Graph Database
+* 31/01 Traefik - Load Balancer and Proxy ("Cloud Native Edge Router") https://traefik.io/~
+* 31/01 Powershell
+* 31/01 ZSH and OhMyZSH - https://ohmyz.sh/  Linux Shell 
+* 31/01 Katacoda - browser based sandboxes and tutorials environment (with the option of defining your own tutorials running on Katacoda servers)
+* 31/01 Cypress Testing - automated unit testing of browser applications (Selenium++): https://www.cypress.io/ 
+
+## Planned for the upcoming Code Cafe
+* LastPass - https://www.lastpass.com/ LastPass remembers all your passwords, so you don't have to.
+* Node Red
+* Kafka Connect
+* Adobe XD - design tool for web and mobile apps - https://www.adobe.com/products/xd.html 
+* Kibana 
+
 ## Possible Topics on the Menu of the Code Café
 
-* ~~ 13/12 ngrok (& local tunnel) for exposing locally running services on the internet~~
-* ~~ 13/12 JSONata - XPath & XSLT/XQuery like expression language for retrieving data from and transforming JSON documents~~
-* ~~ 13/12 Vagrant (& VirtualBox) - tool for efficient management of VMs and a local Docker Engine); especially useful for running Docker on Windows laptops~~
-* ~~ 13/12 QuickSQL - free cloud service for rapid generation of SQL DDL and DML scripts for tables, generated test data, constraints, views, triggers and APIs~~
-* ~~13/12 Neo4j - open source Graph Database~~
-* ~~31/01 Traefik - Load Balancer and Proxy ("Cloud Native Edge Router") https://traefik.io/~~~
-* ~~31/01 Powershell~~
-* ~~31/01 ZSH and OhMyZSH - https://ohmyz.sh/  Linux Shell ~~
-* ~~31/01 Katacoda - browser based sandboxes and tutorials environment (with the option of defining your own tutorials running on Katacoda servers)~~
-* ~~31/01 Cypress Testing - automated unit testing of browser applications (Selenium++): https://www.cypress.io/ ~~
-
+* p5.js a JS client-side library for creating graphic and interactive experiences, based on the core principles of Processing. - https://p5js.org/ 
 * Google Container Diff - utility to compare two container images and find differences
 * Skaffold - command line tool that facilitates continuous development for Kubernetes applications
 * Oracle Self Service Integration - cloud service for specifying and running (poll based) integration recipes
@@ -27,7 +36,6 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * Apache Camel - light weight Java based integration framework
 * Oracle SQL Pattern Matching (Match Recognize)
 * Terraform
-* Kafka Connect
 * JShell - REPL CLI for Java
 * LiveSQL - browser based environment for experimenting with (Oracle) SQL
 * Google ContainerTools - collection of open source tools from Google for container and K8S development and management
@@ -59,7 +67,6 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * Rechart - React UI library based on d3.js for charts in React applications
 * AWS AppSync - Cloud service for implementing a GraphQL server
 * HotJar - client side monitoring and user action tracking - https://www.hotjar.com/home2 
-* Adobe XD - design tool for web and mobile apps - https://www.adobe.com/products/xd.html 
 * KOA - NPM/Node alternative for Express - https://koajs.com/ 
 * GitLab - DevOps lifecycle platform - https://about.gitlab.com/ 
 * Code Analysis - Java Dynamic & Static Callgraph: https://github.com/gousiosg/java-callgraph , Ioh - Node Dynamic Node Call Analysis   https://github.com/maierfelix/Iroh
