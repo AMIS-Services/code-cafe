@@ -30,6 +30,7 @@ For the demo you will also need:
 - `yarn start`
 - `yarn seed`
 - cd into react
+- `yarn`
 - `yarn start`
 - new terminal window, same path
 - `yarn cypress`
