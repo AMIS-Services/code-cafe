@@ -16,16 +16,19 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * 31/01 ZSH and OhMyZSH - https://ohmyz.sh/  Linux Shell 
 * 31/01 Katacoda - browser based sandboxes and tutorials environment (with the option of defining your own tutorials running on Katacoda servers)
 * 31/01 Cypress Testing - automated unit testing of browser applications (Selenium++): https://www.cypress.io/ 
+* 02/04 LastPass - https://www.lastpass.com/ LastPass remembers all your passwords, so you don't have to.
+* 02/04 Kafka Connect
+* 02/04 Adobe XD - design tool for web and mobile apps - https://www.adobe.com/products/xd.html 
+* 02/04 Node Red
+* 02/04 Kibana 
+
 
 ## Planned for the upcoming Code Cafe
-* LastPass - https://www.lastpass.com/ LastPass remembers all your passwords, so you don't have to.
-* Node Red
-* Kafka Connect
-* Adobe XD - design tool for web and mobile apps - https://www.adobe.com/products/xd.html 
-* Kibana 
+-
 
 ## Possible Topics on the Menu of the Code Café
-
+* ArrangoDB - multimodel store, somewhat similar to MongoDB; newer, less mature, much nicer UI, good geo support (with ui openstreetmap integration). tip from Thijs van Ulden - https://www.arangodb.com/
+* BigQuery - Google Column Store - 
 * p5.js a JS client-side library for creating graphic and interactive experiences, based on the core principles of Processing. - https://p5js.org/ 
 * Google Container Diff - utility to compare two container images and find differences
 * Skaffold - command line tool that facilitates continuous development for Kubernetes applications
@@ -80,5 +83,7 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * Imgur - Image sharing/manipulation (animated GIF generation) - https://imgur.com/vidgif
 * LetsEncrypt - Let’s Encrypt is a free, automated, and open Certificate Authority. https://letsencrypt.org/
 * JSONPath and/or JMESPath - JSON querying (and light weight transformation with JMESPath) - (https://goessner.net/articles/JsonPath/) in many client libraries/languages including Java and Node JS- https://github.com/json-path/JsonPath, Online JSON Path Evaluator http://jsonpath.com/; introduction to JSONPath: https://www.baeldung.com/guide-to-jayway-jsonpath ; NPM Package: https://www.npmjs.com/package/jsonpath 
-OpenVAS - http://www.openvas.org/ - a full-featured vulnerability scanner. OpenVAS is available as packages in multiple Linux distros, in source code form, and as a virtual appliance that can be loaded into a VM on Windows. It is also part of Kali Linux.
-mitmproxy - https://mitmproxy.org/ is a free and open source interactive HTTPS proxy. 
+* OpenVAS - http://www.openvas.org/ - a full-featured vulnerability scanner. OpenVAS is available as packages in multiple Linux distros, in source code form, and as a virtual appliance that can be loaded into a VM on Windows. It is also part of Kali Linux.
+* mitmproxy - https://mitmproxy.org/ is a free and open source interactive HTTPS proxy. 
+* Kialia - Service Mesh Observability (friends of Istio) https://www.kiali.io/
+* Apache Nifi - Real Time High Volume Data Flows to process and distribute data -  https://nifi.apache.org/  
