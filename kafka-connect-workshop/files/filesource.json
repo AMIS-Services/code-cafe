@@ -1,0 +1,11 @@
+{
+  "name": "local-file-source",
+  "config":{
+    "connector.class": "org.apache.kafka.connect.file.FileStreamSourceConnector",
+    "file": "/tmp/outputas.txt",
+    "topic": "connect-test",
+    "key.converter":"org.apache.kafka.connect.storage.StringConverter",
+    "value.converter":"org.apache.kafka.connect.storage.StringConverter",
+	"batch.size":500
+  }
+}

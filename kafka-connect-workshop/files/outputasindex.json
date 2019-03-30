@@ -1,0 +1,30 @@
+{
+	"settings": {
+		"number_of_replicas": 1,
+		"number_of_shards": 3,
+		"analysis": {},
+		"refresh_interval": "1s"
+	},
+	"mappings": {
+		"doc": {
+			"properties": {
+				"actions": {
+					"type": "text"
+				},
+				"eventtime": {
+					"type": "date",
+					"format": "epoch_millis"
+				},
+				"filename": {
+					"type": "text"
+				},
+				"owner": {
+					"type": "text"
+				},
+				"watch": {
+					"type": "text"
+				}
+			}
+		}
+	}
+}

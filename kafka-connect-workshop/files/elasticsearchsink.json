@@ -1,0 +1,15 @@
+{
+  "name": "elasticsearch-sink",
+  "config":{
+    "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
+    "topics":"connect-test",
+    "key.ignore":"true",
+    "schema.ignore":"true",
+    "connection.url":"http://elasticsearch:9200",
+    "type.name":"doc",
+    "key.converter":"org.apache.kafka.connect.json.JsonConverter",
+    "value.converter":"org.apache.kafka.connect.json.JsonConverter",
+    "key.converter.schemas.enable":"false",
+    "value.converter.schemas.enable":"false"
+  }
+}
