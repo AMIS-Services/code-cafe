@@ -24,7 +24,15 @@ Code Café sessions will usually not work with slides and presentations. Items a
 
 
 ## Planned for the upcoming Code Cafe
--
+* 02/04 LastPass - https://www.lastpass.com/ LastPass remembers all your passwords, so you don't have to.
+* 02/04 Kafka Connect
+* 02/04 Adobe XD - design tool for web and mobile apps - https://www.adobe.com/products/xd.html 
+* 02/04 Node Red
+* 02/04 Kibana 
+
+## Next Code Cafe: May 20th 2019
+* AWS?
+* APEX?
 
 ## Possible Topics on the Menu of the Code Café
 * ArrangoDB - multimodel store, somewhat similar to MongoDB; newer, less mature, much nicer UI, good geo support (with ui openstreetmap integration). tip from Thijs van Ulden - https://www.arangodb.com/
