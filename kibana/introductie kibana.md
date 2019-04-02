@@ -5,10 +5,13 @@ Kibana is een eenvoudinge, maar krachtige tool om snel en herbruikbaar grote hoe
 ## Kibana installeren
 
 Hosted:
-  `https://www.elastic.co/cloud/elasticsearch-service/signup`
+`https://www.elastic.co/cloud/elasticsearch-service/signup`
+  
 Windows:
-  `https://www.elastic.co/guide/en/kibana/current/windows.html`
-	Download de zip, unzip en start $KIBANA_HOME\bin\kibana.bat
+`https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.7.0.zip`
+`https://artifacts.elastic.co/downloads/kibana/kibana-6.7.0-windows-x86_64.zip`
+	Download de zips, unzip en start .\bin\elasticsearch.bat en .\bin\kibana.bat
+	
 RPM:
   `https://www.elastic.co/guide/en/kibana/current/rpm.html`
 
@@ -19,7 +22,7 @@ RPM:
 - Klik op 'view data'.
 
 # Waarom visualiseren?
-Integratie is allesbehalve glamoureus. Iedereen die werkt tussen back- en front-end, weet dat de mooiste oplossingen vaak niet gezien worden. Visualiseren maakt dat onzichtbaar werk zichtbaar. De ‘business’ wil vaak inzicht in hoe het gaat met de ontwikkeling en het onderhoud van een applicatie, ongeacht hoe dit gebeurt. Door zaken visueel te maken breek je door de 'taalbarriere' die bestaat tussen de IT-er en de nIT-er. Daarnaast een visuele interface veel eenvoudiger monitoren voor jezelf, maar ook voor andere partijen. Zo kan iemand die je applicatie niet goed kent, wel zien wat er mee gebeurt, en daarop aansturen. Ook zijn visualisaties indeaal voor demo’s en wekelijkse/maandelijkse rapportages.
+Integratie is allesbehalve glamoureus. Iedereen die werkt tussen back- en front-end, weet dat de mooiste oplossingen vaak niet gezien worden. Visualiseren maakt dat onzichtbaar werk zichtbaar. De â€˜businessâ€™ wil vaak inzicht in hoe het gaat met de ontwikkeling en het onderhoud van een applicatie, ongeacht hoe dit gebeurt. Door zaken visueel te maken breek je door de 'taalbarriere' die bestaat tussen de IT-er en de nIT-er. Daarnaast een visuele interface veel eenvoudiger monitoren voor jezelf, maar ook voor andere partijen. Zo kan iemand die je applicatie niet goed kent, wel zien wat er mee gebeurt, en daarop aansturen. Ook zijn visualisaties indeaal voor demoâ€™s en wekelijkse/maandelijkse rapportages.
 
 # Hoe wel, en hoe niet?
 ## Wel:
@@ -41,9 +44,9 @@ Integratie is allesbehalve glamoureus. Iedereen die werkt tussen back- en front-
 # Voorbeelden uit de praktijk
 MISA bij Medux gebruikt Kibana voor:
 * Eventrapportage en monitoring (successrate, errortypes, API performance, etc.)
-* Data tracking across API’s
+* Data tracking across APIâ€™s
 * Troubleshooting
-* ‘Weggeef-dashboards’: dashboards die nuttig zijn voor feedback door klantenservice / front end / back end / business
+* â€˜Weggeef-dashboardsâ€™: dashboards die nuttig zijn voor feedback door klantenservice / front end / back end / business
 * Machine learned anomaly detection
 
 # Zelf aan de slag!
