@@ -23,14 +23,7 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * 02/04 Kibana 
 
 
-## Planned for the upcoming Code Cafe
-* 02/04 LastPass - https://www.lastpass.com/ LastPass remembers all your passwords, so you don't have to.
-* 02/04 Kafka Connect
-* 02/04 Adobe XD - design tool for web and mobile apps - https://www.adobe.com/products/xd.html 
-* 02/04 Node Red
-* 02/04 Kibana 
-
-## Next Code Cafe: May 20th 2019
+## Planned for the upcoming Code Cafe - May 20th 2019
 * AWS?
 * APEX?
 
@@ -95,3 +88,10 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * mitmproxy - https://mitmproxy.org/ is a free and open source interactive HTTPS proxy. 
 * Kialia - Service Mesh Observability (friends of Istio) https://www.kiali.io/
 * Apache Nifi - Real Time High Volume Data Flows to process and distribute data -  https://nifi.apache.org/  
+* FuentD - Logging collector, similar to LogStash/Beats in Elastic Stack; also used with Elastic and Kibana; part of CNCF, frequently used in Kubernetes - https://www.fluentd.org/ 
+* Kayenta - automated Canarary release analysis (integrated with Spinnaker)  - https://cloud.google.com/blog/products/gcp/introducing-kayenta-an-open-automated-canary-analysis-tool-from-google-and-netflix
+* Spinnaker - Release Management (some overlap with Jenkins, GitLab) - https://www.spinnaker.io/concepts/ 
+* Zipkin - collect trace information across end to end chains of processing requests - great to use with microservices and multilayered APIs - https://zipkin.io
+* ExpressGateway - lightweight all Node API Gateway - https://www.express-gateway.io/ (alternative to Kong, Apigee, Tyk)
+* CircleCI - Automated Continuous Integration (cloud service) - https://circleci.com/
+* Gatling - load testing tool, alternative for JMeter (looks attractive) - https://gatling.io/  
