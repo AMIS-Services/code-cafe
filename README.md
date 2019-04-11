@@ -96,3 +96,5 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * CircleCI - Automated Continuous Integration (cloud service) - https://circleci.com/
 * Gatling - load testing tool, alternative for JMeter (looks attractive) - https://gatling.io/  
 * DuckDNS - free Dynamic DNS service (get a fixed URL that is mapped to an IP address that you can change at any moment )  https://www.duckdns.org 
+* StreamSets - data integration engine for flowing data - https://streamsets.com/products/dataops-platform
+* Debezium - to turn database change events into Kafka messages - https://debezium.io (now including Oracle Databade connector)
