@@ -38,6 +38,7 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * WebSpeech API - speech to text support in HTML5 browsers
 * Apache Drill - SQL on non-SQL sources such as JSON, CSV, Hadoop 
 * Apache Camel - light weight Java based integration framework
+* Syndesis - UI for Camel
 * Oracle SQL Pattern Matching (Match Recognize)
 * Terraform
 * JShell - REPL CLI for Java
@@ -97,4 +98,8 @@ Code Café sessions will usually not work with slides and presentations. Items a
 * Gatling - load testing tool, alternative for JMeter (looks attractive) - https://gatling.io/  
 * DuckDNS - free Dynamic DNS service (get a fixed URL that is mapped to an IP address that you can change at any moment )  https://www.duckdns.org 
 * StreamSets - data integration engine for flowing data - https://streamsets.com/products/dataops-platform
-* Debezium - to turn database change events into Kafka messages - https://debezium.io (now including Oracle Databade connector)
+* Debezium - to turn database change events into Kafka messages - https://debezium.io (now including Oracle Databade connector - using XStreams which requires Golden Gate license)
+* RethinkDB - https://www.rethinkdb.com/ - database pushing JSON to apps (leverage socket.io)
+* Storyline  http://storyline.knightlab.com/ , StoryMap - https://storymap.knightlab.com/ 
+* Microcks - http://microcks.github.io/ - mock implementations for APIs/microservices
+* Apicurio.io - https://www.apicur.io/ - API design and publication (similar to Swagger and Apiary)
