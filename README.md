@@ -1,26 +1,53 @@
-# code-cafe
+# Code Cafe
 The Code Café is a series of low key, relaxed meetups where we explore various technologies, tools, programming aids and other fun stuff in a relaxed setting. This repository contains artifacts for the Code Café sessions.
 
 Note: in the Code Café, we can work with various technologies - browser based or local (typically in containers) - and across the stack: UI, (micro)service, database, code editing and programming utilities and general productivity boosters. 
 
 Code Café sessions will usually not work with slides and presentations. Items are introduced with a brief introduction and a demonstration - followed by trying out!
 
+## Git Repository
+Initially, a single Code Cafe Repository was used on GitHub. However, that becomes unwieldy. So now we use GitHub repos per Code Cafe session, and we link these individual session repos as sub modules to this overarching Code Cafe repo.
+
+I use the command
+```
+git submodule add https://github.com/AMIS-Services/code-cafe-20190520
+```
+to add a repo as a submodule. After executing this command, the *.gitmodules* file is committed for the mother-repo. All sources and changes for a specific Code Cafe session are made in the context of the GitHub repo for that particular session.  
+
+See for example this article with details on submodules: https://github.blog/2016-02-01-working-with-submodules/ .
+
 ## On the menu of earlier Code Café sessions
-*  13/12 ngrok (& local tunnel) for exposing locally running services on the internet
-*  13/12 JSONata - XPath & XSLT/XQuery like expression language for retrieving data from and transforming JSON documents
-*  13/12 Vagrant (& VirtualBox) - tool for efficient management of VMs and a local Docker Engine); especially useful for running Docker on Windows laptops
-*  13/12 QuickSQL - free cloud service for rapid generation of SQL DDL and DML scripts for tables, generated test data, constraints, views, triggers and APIs
-* 13/12 Neo4j - open source Graph Database
-* 31/01 Traefik - Load Balancer and Proxy ("Cloud Native Edge Router") https://traefik.io/~
-* 31/01 Powershell
-* 31/01 ZSH and OhMyZSH - https://ohmyz.sh/  Linux Shell 
-* 31/01 Katacoda - browser based sandboxes and tutorials environment (with the option of defining your own tutorials running on Katacoda servers)
-* 31/01 Cypress Testing - automated unit testing of browser applications (Selenium++): https://www.cypress.io/ 
-* 02/04 LastPass - https://www.lastpass.com/ LastPass remembers all your passwords, so you don't have to.
-* 02/04 Kafka Connect
-* 02/04 Adobe XD - design tool for web and mobile apps - https://www.adobe.com/products/xd.html 
-* 02/04 Node Red
-* 02/04 Kibana 
+
+### 2019
+
+#### 20 May 
+* Laptop as Code – Nico Klasens
+* Quickstart - Je Container de Azure Cloud in – Henk Jan van Wijk
+* Recharts - charting in React – Bram Kaashoek
+* Asynchronous Generators en Data Pipelines in JavaScript – Lucas Jellema
+
+#### 2 April
+* LastPass - https://www.lastpass.com/ LastPass remembers all your passwords, so you don't have to.
+* Kafka Connect
+* Adobe XD - design tool for web and mobile apps - https://www.adobe.com/products/xd.html 
+* Node Red
+* Kibana 
+
+#### 31 January
+* Traefik - Load Balancer and Proxy ("Cloud Native Edge Router") https://traefik.io/~
+* Powershell
+* ZSH and OhMyZSH - https://ohmyz.sh/  Linux Shell 
+* Katacoda - browser based sandboxes and tutorials environment (with the option of defining your own tutorials running on Katacoda servers)
+* Cypress Testing - automated unit testing of browser applications (Selenium++): https://www.cypress.io/ 
+
+### 2018
+
+#### 13 December
+*  ngrok (& local tunnel) for exposing locally running services on the internet
+*  JSONata - XPath & XSLT/XQuery like expression language for retrieving data from and transforming JSON documents
+*  Vagrant (& VirtualBox) - tool for efficient management of VMs and a local Docker Engine); especially useful for running Docker on Windows laptops
+*  QuickSQL - free cloud service for rapid generation of SQL DDL and DML scripts for tables, generated test data, constraints, views, triggers and APIs
+* Neo4j - open source Graph Database
 
 
 ## Planned for the upcoming Code Cafe - May 20th 2019
