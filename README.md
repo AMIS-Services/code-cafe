@@ -130,3 +130,9 @@ See for example this article with details on submodules: https://github.blog/201
 * Storyline  http://storyline.knightlab.com/ , StoryMap - https://storymap.knightlab.com/ 
 * Microcks - http://microcks.github.io/ - mock implementations for APIs/microservices
 * Apicurio.io - https://www.apicur.io/ - API design and publication (similar to Swagger and Apiary)
+* Axon Framework and Server - https://axoniq.io/ - event driven microservices in Java
+* ZeroMQ - http://zeromq.org/ Distributed messaging
+* NPM Axon - https://www.npmjs.com/package/axon message-oriented socket library for node.js heavily inspired by zeromq 
+* Rabbit MQ -  https://www.rabbitmq.com/ open source message broker, lightweight and easy to deploy on premises and in the cloud. It supports multiple messaging protocols. RabbitMQ can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements. 
+* Nakadi https://github.com/zalando/nakadi /https://nakadi.io/  - Zalando's distributed event bus that implements a RESTful API abstraction on top of Kafka-like queues ; alternative to Confluent Platform (and perhaps Axual as well); it has "timelines" that allows moving Topics between Clusters in a smart way (see https://archive.fosdem.org/2018/schedule/event/nakadi/)It also allows combining different "sequential logs" backends (Kafka and others) under the covers
+* Keda - Kubernetes Event Driven Autoscaling (https://github.com/kedacore/keda) - Adding and Removing Pods for example based on how full an event queue becomes (or based on HTTP request rate)
