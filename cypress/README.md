@@ -27,6 +27,7 @@ For the demo you will also need:
 ### Running the demo:
 
 - cd into koa
+- `yarn`
 - `yarn start`
 - `yarn seed`
 - cd into react
@@ -56,6 +57,9 @@ This will add several folders and files, including some examples of what's possi
 ## Resources
 
 main site: https://www.cypress.io/
+
 docs: https://docs.cypress.io/
+
 source code: https://github.com/cypress-io/cypress
+
 npm page: https://www.npmjs.com/package/cypress
