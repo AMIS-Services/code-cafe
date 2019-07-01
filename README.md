@@ -141,3 +141,6 @@ See for example this article with details on submodules: https://github.blog/201
 * Apache AirFlow - Apache Airflow ( https://airflow.apache.org/ ) om (data processing) workflows/tasks te coördineren.
 * Hawt.io - https://hawt.io/ - A modular web console for managing your Java stuff (among others UI console for JVM behavior and GUI for Apache Camel, Active MQ, Sping Boot;JVM: diagnostics, logs, JMX, threads etc.)
 * SonarQube - https://www.sonarqube.org/ - tool for Code Quality and Security Analysis for over 25 programming languages, easily integrated into Jenkins pipelines ; cloud service: https://sonarcloud.io/about 
+* Sublime Merge - https://www.sublimemerge.com/ - Git UI Client - A snappy UI, three-way merge tool,
+side-by-side diffs, syntax highlighting, and more.
+* IntelliJ IDEA - https://www.jetbrains.com/idea/ - Community Edition (JVM development - Java, Kotlin, Scala, Android)
