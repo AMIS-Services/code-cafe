@@ -116,7 +116,7 @@ See for example this article with details on submodules: https://github.blog/201
 * mitmproxy - https://mitmproxy.org/ is a free and open source interactive HTTPS proxy. 
 * Kialia - Service Mesh Observability (friends of Istio) https://www.kiali.io/
 * Apache Nifi - Real Time High Volume Data Flows to process and distribute data -  https://nifi.apache.org/  
-* FuentD - Logging collector, similar to LogStash/Beats in Elastic Stack; also used with Elastic and Kibana; part of CNCF, frequently used in Kubernetes - https://www.fluentd.org/ 
+* FluentD - Logging collector, similar to LogStash/Beats in Elastic Stack; also used with Elastic and Kibana; part of CNCF, frequently used in Kubernetes - https://www.fluentd.org/ 
 * Kayenta - automated Canarary release analysis (integrated with Spinnaker)  - https://cloud.google.com/blog/products/gcp/introducing-kayenta-an-open-automated-canary-analysis-tool-from-google-and-netflix
 * Spinnaker - Release Management (some overlap with Jenkins, GitLab) - https://www.spinnaker.io/concepts/ 
 * Zipkin - collect trace information across end to end chains of processing requests - great to use with microservices and multilayered APIs - https://zipkin.io
@@ -144,3 +144,5 @@ See for example this article with details on submodules: https://github.blog/201
 * Sublime Merge - https://www.sublimemerge.com/ - Git UI Client - A snappy UI, three-way merge tool,
 side-by-side diffs, syntax highlighting, and more.
 * IntelliJ IDEA - https://www.jetbrains.com/idea/ - Community Edition (JVM development - Java, Kotlin, Scala, Android)
+* Podman - daemonless alternative to Docker for building and running containers - https://medium.com/@ganeshmani009/replacing-docker-with-podman-power-of-podman-cloudnweb-23cfb7541538 , https://github.com/containers/libpod , https://podman.io/ 
+* dependabot.com -  https://dependabot.com - een gratis dienst die de dependencies van je software inspecteert en je op de hoogte brengt als je outdated of insecure dependencies hebt.
