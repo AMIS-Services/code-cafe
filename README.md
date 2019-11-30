@@ -146,3 +146,61 @@ side-by-side diffs, syntax highlighting, and more.
 * IntelliJ IDEA - https://www.jetbrains.com/idea/ - Community Edition (JVM development - Java, Kotlin, Scala, Android)
 * Podman - daemonless alternative to Docker for building and running containers - https://medium.com/@ganeshmani009/replacing-docker-with-podman-power-of-podman-cloudnweb-23cfb7541538 , https://github.com/containers/libpod , https://podman.io/ 
 * dependabot.com -  https://dependabot.com - een gratis dienst die de dependencies van je software inspecteert en je op de hoogte brengt als je outdated of insecure dependencies hebt.
+* AutoHotKey - light weight RPA/Windows Scripting associated with HotKeys - https://www.autohotkey.com/
+
+* k3S - light weight Kubernetes Cluster on Linux Host (similar to Minikube but much much smaller) - see https://technology.amis.nl/2019/11/12/ultra-fast-ultra-small-kubernetes-on-linux-k3s-beating-minikube/
+
+* DeckDeck Go – https://deckdeckgo.com/ Presentation Editor
+
+* Karate (DSL) https://github.com/intuit/karate – open-source tool to combine API test-automation, mocks and performance-testing into a single, unified framework
+
+* Kind – Kubernetes in Docker- https://github.com/kubernetes-sigs/kind
+
+* nip.io – Dead simple wildcard DNS for any IP Address; allows you to do that by mapping any IP Address to a hostname
+
+* lvh.me
+
+* Dive – inspecting and comparing Container Image (layers) – https://github.com/wagoodman/dive
+
+* Newman – programmatic execution of Postman Test Collections
+
+* WireMock is a simulator for HTTP-based APIs (http://wiremock.org/)
+
+* http://rest-assured.io/ – testing REST APIs from java
+
+* GitBook
+
+* JDeferred – https://github.com/jdeferred/jdeferred – Java Deferred/Promise library similar to JQuery.
+
+* Testcontainers – Java gebaseerd programmatisch starten en manipuleren van containers op local or remote docker host
+
+* QuickPerf – extension of JUnit – voor testen van performance gerelateerde applicatie-aspecten (in een heel vroeg stadium)
+
+* Jbi – smart container image generation voor Java applicaties; ook : Skaffold (Container Pipeline), Helm (deployment van K8S applicaties) en Kustomization (omgevingspecifieke overrides van K8S yaml files)
+
+* Google Cloud Run – very simple ‘run my container’ service
+
+* Buildpacks – Buildpacks build apps in a consistent, repeatable way. Buildpacks know what a specific application type needs in terms of its runtime. The big idea behind buildpacks? Building containers from source code should be completely automated.
+
+* Microbenchmarking the JVM:  https://openjdk.java.net/projects/code-tools/jmh/  (see https://www.youtube.com/watch?v=5AFgNuGwLos for a session that includes a demo)
+
+* Jest – JavaScript testing – https://jestjs.io/ 
+
+* Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework. – https://www.chaijs.com/
+
+* Apache Beam – data pipeline coordination
+
+* ArrangoDB – multi model database
+
+* Fairing
+
+* Storybook – https://storybook.js.org/ – Storybook is an open source tool for developing UI components in isolation for React, Vue, and Angular. It makes building stunning UIs organized and efficient.
+
+* Portecle – is a user friendly GUI application for creating, managing and examining keystores, keys, certificates, certificate requests, certificate revocation lists and more – http://portecle.sourceforge.net/ (that is HTTP not HTTPS)
+
+* OpenSSL – OpenSSL is a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library. – https://www.openssl.org/
+
+* NMap – https://nmap.org/ Nmap (“Network Mapper”) is a free and open source (license) utility for network discovery and security auditing. It was even featured in twelve movies, including The Matrix Reloaded, Die Hard 4, Girl With the Dragon Tattoo, and The Bourne Ultimatum.
+
+* GopherJS – browser playground for Go(Lang) – and: transpile Go application to JavaScript – https://github.com/gopherjs/gopherjs 
+
