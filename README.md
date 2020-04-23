@@ -203,4 +203,24 @@ side-by-side diffs, syntax highlighting, and more.
 * NMap – https://nmap.org/ Nmap (“Network Mapper”) is a free and open source (license) utility for network discovery and security auditing. It was even featured in twelve movies, including The Matrix Reloaded, Die Hard 4, Girl With the Dragon Tattoo, and The Bourne Ultimatum.
 
 * GopherJS – browser playground for Go(Lang) – and: transpile Go application to JavaScript – https://github.com/gopherjs/gopherjs 
+* qgrid - widget for Jupyter Notebook - An interactive grid for sorting, filtering, and editing DataFrames in Jupyter notebooks - https://github.com/quantopian/qgrid
+* Dash - Awesome API documentation browser and code snippet manager. https://kapeli.com/dash (on Mac)
+* Studio 3T - MongoDB IDE Easy IDE for manager and it is free for MongoDB https://studio3t.com/
+* DBeaver - Universal SQL Client such as MYSQL, Postgres, etc https://dbeaver.io/
+* GitKraken The most popular Git GUI for Windows, Mac and Linux. https://www.gitkraken.com/
+* StarUML3 All-in-one UML, SysML, BPMN Modeling Platform for Agile, EA TOGAF ADM Process Management. http://staruml.io/
+* DirectPoll - live polls in presentations and Team Meetings - https://directpoll.com/
+* Insomnia - The most intuitive cross-platform REST API Client. https://insomnia.rest/
+* AWS Cloud9 IDE is a 100 percent online editor which combines online editing with a Docker UBUNTU workspace. Source: https://www.webbuildersguide.com/website-builder-articles/top-10-software-development-tools/ - part of AWS free tier
+* Habitica, an open-source habit building program that treats your life like a Role Playing Game. - iTunes App Store, Google Play and https://habitica.com/static/home 
+* musicForPrograming - The musicforProgramming website is an interesting concept for a music generator meant to increase productivity. Its interface mimics a code editor; when going to the page to change the track, you’ll be more likely to keep focus on your coding activities, because you’ll visually link this website with your work.
+* Clockify - time you spend on various programming activities is vital, and there is no better way to do this than turning to efficient and free time tracking software. https://clockify.me/developer-time-tracking
+* F.lux is a cross-platform that adjusts the color temperature of your display, to help your eyes rest, and ensure you can work on your programming tasks in a quality way, longer.
+* Soundtrack.net - This website is a great resource for soundtracks you can listen to while programming, and it offers a large number of game soundtracks. It also offers an extensive list of movie and TV show soundtracks (about 30,000 titles in total), and you can listen to music from newly released trailers and teasers.
+* MantisBT - Mantis is a web-based bug tracking system. It’s main use is to track software defects and report them, but you can configure it so that it works like a project management tool and issue tracking system.
+* Focusmate - If you’re a freelance developer worried that you’re prone to procrastinating during the time periods when you should be coding, you can try Focusmate. This is a coworking virtual community, where you get assigned with a partner who makes sure you focus on your tasks.
+* AutoHotKey - If you’re a Windows user, you can turn to AutoHotKey, a scripting language that helps automate recurring actions you have to undertake in Windows applications. RPA on your laptop. 
+* Codeanywhere - a code editor that allows developers to code together in real-time, and finish more in less time. With this code editor, you can work directly in your browser. Just invite your collaborators, by sending them an URL link of the project; you can determine the level of permissions for each team member, and invite as many programmers as you want
+* RescueTime is more for tracking personal productivity. It’s an automatic time tracker that measures how much time you spend on various software and websites, without you having to click anything. As such, its perfect if you’re interested in how, for how long, and on what websites you procrastinate.
+* 
 
